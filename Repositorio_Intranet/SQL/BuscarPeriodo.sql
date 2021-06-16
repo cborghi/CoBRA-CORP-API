@@ -1,0 +1,5 @@
+﻿SELECT [ID_PERIODO]
+      ,[DESCRICAO]
+      ,[DATA_INICIO]
+      ,[DATA_FIM]
+  FROM [dbo].[TB_PERIODO_META]

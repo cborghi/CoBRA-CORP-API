@@ -1,0 +1,20 @@
+﻿INSERT INTO [dbo].[TB_ENCARTE_PRODUTO]
+           ([ID_PRODUTO]
+           ,[ENCARTE_TIPO]
+           ,[ENCARTE_ACABAMENTO]
+           ,[ENCARTE_PAPEL]
+           ,[ENCARTE_GRAMATURA]
+           ,[ENCARTE_FORMATO]
+           ,[ENCARTE_COR]
+           ,[ENCARTE_OUTROS]
+           ,[ENCARTE_PAGINAS])
+     VALUES
+           (@ID_PRODUTO
+           ,@ENCARTE_TIPO
+           ,@ENCARTE_ACABAMENTO
+           ,@ENCARTE_PAPEL
+           ,@ENCARTE_GRAMATURA
+           ,@ENCARTE_FORMATO
+           ,@ENCARTE_COR
+           ,@ENCARTE_OUTROS
+           ,@ENCARTE_PAGINAS)

@@ -1,0 +1,4 @@
+﻿SELECT [DAES_ID]
+      ,[DAES_DIA]
+      ,[DAES_DESCRICAO]
+  FROM [dbo].[DATA_ESPECIAL]

@@ -1,0 +1,3 @@
+﻿SELECT [GTEX_ID]
+      ,[GTEX_DESCRICAO]
+  FROM [dbo].[GENERO_TEXTUAL]

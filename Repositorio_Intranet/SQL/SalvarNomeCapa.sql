@@ -1,0 +1,11 @@
+﻿IF NOT EXISTS(SELECT * FROM TB_NOME_CAPA WHERE NOME_CAPA = NOME_CAPA AND ID_AUTOR_BENEFICIARIO = @ID_AUTOR_BENEFICIARIO)
+BEGIN
+    INSERT INTO [dbo].[TB_NOME_CAPA]
+               ([ID_AUTOR_BENEFICIARIO]
+               ,[NOME_CAPA]
+               ,[ATIVO])
+         VALUES
+               (@ID_AUTOR_BENEFICIARIO
+               ,@NOME_CAPA
+               ,1)
+END

@@ -1,0 +1,3 @@
+﻿SELECT [ID_ORIGEM]
+      ,[DESCRICAO]
+  FROM [dbo].[TB_ORIGEM]

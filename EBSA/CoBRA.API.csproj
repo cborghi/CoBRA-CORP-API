@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>OutOfProcess</AspNetCoreHostingModel>
+    <AspNetCoreModuleName>AspNetCoreModule</AspNetCoreModuleName>
+    <AssemblyVersion>3.2.0.0</AssemblyVersion>
+    <FileVersion>3.2.0.0</FileVersion>
+    <UserSecretsId>4b92ec5f-3514-45d4-8be8-5a586da99138</UserSecretsId>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.1.1" />
+    <PackageReference Include="DocumentFormat.OpenXml" Version="2.10.1" />
+    <PackageReference Include="itext7" Version="7.1.11" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.2.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    <PackageReference Include="System.DirectoryServices" Version="4.5.0" />
+    <PackageReference Include="System.DirectoryServices.AccountManagement" Version="4.5.0" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\CoBRA.Infra.Copore\CoBRA.Infra.Corpore.csproj" />
+    <ProjectReference Include="..\CoBRA.Infra.CrossCutting.OTRSService\CoBRA.Infra.CrossCutting.OTRSService.csproj" />
+    <ProjectReference Include="..\Modelo\CoBRA.Domain.csproj" />
+    <ProjectReference Include="..\Negocio\CoBRA.Application.csproj" />
+    <ProjectReference Include="..\Repositorio_Intranet\CoBRA.Infra.Intranet.csproj" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <None Update="CorpoHtml\RequisicaoCompras\CorpoRequisicaoGeradaCompras.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="CorpoHtml\RequisicaoElvis\CorpoRequisicaoExcluida.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Folder Include="Files\Upload\" />
+  </ItemGroup>
+
+</Project>

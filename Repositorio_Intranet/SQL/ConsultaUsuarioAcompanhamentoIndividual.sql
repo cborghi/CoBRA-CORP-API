@@ -1,0 +1,36 @@
+﻿SELECT [usu].[ID_USUARIO_RM]
+      ,[usu].[NOME]
+FROM [EBSA].[dbo].[TB_USUARIO_RM] [usu]
+LEFT JOIN
+	TB_GERENTE_SUPERVISOR AS GS
+	ON usu.ID_USUARIO_RM = GS.ID_GERENTE
+WHERE 
+	((@ID_USUARIO_RM = '00000000-0000-0000-0000-000000000000') OR (USU.ID_USUARIO_RM = @ID_USUARIO_RM))
+AND
+	[usu].[ATIVO] = 1
+--AND
+--	[usu].[ID_USUARIO_RM] IN (
+--		SELECT [usu].[ID_USUARIO_RM]
+--		FROM [EBSA].[dbo].[TB_USUARIO_RM] [usu]
+--		INNER JOIN
+--			[TB_META_ANUAL] [ma] ON [usu].[ID_USUARIO_RM] = [ma].[ID_USUARIO_RM]
+--		GROUP BY [usu].[ID_USUARIO_RM]
+--	)
+--AND
+--	[usu].[ID_USUARIO_RM] IN (
+--		SELECT [usu].[ID_USUARIO_RM]
+--		FROM [EBSA].[dbo].[TB_USUARIO_RM] [usu]
+--		INNER JOIN
+--			[TB_META_FINANCEIRA] [mf] ON [usu].[ID_USUARIO_RM] = [mf].[ID_USUARIO_RM]
+--		GROUP BY [usu].[ID_USUARIO_RM]
+--	)
+	
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+﻿SELECT [ID_CONTEUDO]
+		,[NOME]
+		,[CAMINHO]
+		,[NOME_GUID]
+		,[USUARIO]
+		,[DT_CADASTRO]
+		,[ATIVO]
+		,[PRIMEIRA_PAGINA]
+	, (SELECT COUNT(*) 	FROM TB_CONTEUDO_PP
+	   WHERE NOME LIKE '%' + @Filtro + '%'
+	   AND ATIVO = 1) AS CONTAGEM
+FROM TB_CONTEUDO_PP
+WHERE NOME LIKE '%' + @Filtro + '%'
+	   AND ATIVO = 1
+ORDER BY [NOME]
+OFFSET ((@NumeroPagina) * @RegistrosPagina) ROWS
+FETCH NEXT @RegistrosPagina ROWS ONLY;

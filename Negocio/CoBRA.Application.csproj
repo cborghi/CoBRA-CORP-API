@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CoBRA.Infra.CrossCutting.EmailService\CoBRA.Infra.CrossCutting.EmailService.csproj" />
+    <ProjectReference Include="..\Modelo\CoBRA.Domain.csproj" />
+    <ProjectReference Include="..\Repositorio_Intranet\CoBRA.Infra.Intranet.csproj" />
+    <ProjectReference Include="..\Repositorio_Protheus\CoBRA.Infra.Protheus.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="CorpoHtml\RequisicaoElvis\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="CorpoHtml\RequisicaoElvis\CorpoRequisicaoGeradaElvis.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

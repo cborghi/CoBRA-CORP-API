@@ -1,0 +1,4 @@
+﻿SELECT [CODIGO]
+      ,[DESCRICAO]
+      ,[ABREVIACAO]
+  FROM [dbo].[TB_VERSAO]

@@ -1,0 +1,3 @@
+﻿SELECT [ASSU_ID]
+      ,[ASSU_DESCRICAO]
+  FROM [dbo].[ASSUNTO]

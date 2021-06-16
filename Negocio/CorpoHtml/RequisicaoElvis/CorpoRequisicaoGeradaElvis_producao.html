@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html>
+<link href="https://fonts.googleapis.com/css?family=Lato:700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:700&display=swap" rel="stylesheet">
+
+<head>
+    <title>Requisição Gerada.</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale==1">
+    <style type="text/css">
+        body {
+            height: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
+        a.button {
+			padding: 8px 20px;
+			text-decoration: none;
+            box-sizing: border-box;
+            border-radius: 5px;
+            background: #19286E;
+            color: #ffffff;
+            border: 1px solid #19286E;
+            width: 190px;
+            font-family: 'Open Sans', sans-serif;
+            height: 40px;
+        }
+
+        .content {
+            height: 400px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .header {
+            height: 80px;
+            width: 50%;
+            background: linear-gradient(194.77deg, #00B8B1 0%, #0096B0 23.96%, #0073A7 43.39%, #004F92 70.29%, #19286E 90.15%);
+        }
+
+        .logo {
+            height: 57px;
+            width: 122px;
+            padding: 10px 20px;
+            float: left;
+        }
+
+        .toolbox {
+            height: 48px;
+            font-family: 'Lato', sans-serif;
+            font-size: 20px;
+            color: #19286E;
+            text-align: left;
+            width: 50%;
+            background: #eeeeee
+        }
+
+        .toolbox-text {
+            padding: 10px 20px;
+        }
+
+        .conteudo {
+			padding: 10px 20px;
+            height: 100% !important;
+            width: 50%;
+            background: #ffffff;
+            text-align: left
+        }
+
+        .conteudo-text {
+            padding: 5px 0;
+            font-family: 'Open Sans', sans-serif;
+            color: #000000;
+            font-size: 15px;
+        }
+
+        .div-button {
+            padding-top: 150px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+
+        .footer {
+            width: 50%;
+            height: 56px;
+            border-top: 1px solid #CCCCCC;
+        }
+
+        .footer-text {
+            float: right;
+            padding: 10px;
+            font-family: 'Open Sans', sans-serif;
+            color: #555555
+        }
+    </style>
+</head>
+
+<body>
+    <div style="width: 100%" class="content">
+        <div class="header">
+            <img alt="Cobra Logo" src="https://www.editoradobrasil.com.br/admportais/templates-emails/recuperacao-de-senha/img/header.png" class="logo">
+        </div>
+        <div class="toolbox">
+            <div class="toolbox-text">
+                <label>Inclusão de Requisição de Pagamento</label>
+            </div>
+        </div>
+        <div class="conteudo">
+            <div class="conteudo-text">
+                <label><strong>Emissão:</strong> __emissao__</label>
+            </div>
+            <div class="conteudo-text">
+                <label><strong>Solicitante:</strong> __solicitante__</label>
+            </div>
+            <div class="conteudo-text">
+                <label><strong>N° da Requisicao:</strong> __requisicao__</label>
+            </div>
+            <div class="conteudo-text">
+                <label><strong>Fornecedor:</strong> __fornecedor__</label>
+            </div>
+            <div class="conteudo-text">
+                <label><strong>Valor:</strong> __valor__</label>
+            </div>
+            <div class="div-button">
+                <a href="http://cobra.editoradobrasil.com.br/#/requisicao-compras/__requisicao__" target="_blank" class="button">Visualizar Requisição</a>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-text">
+                <label>CoBra. Coporativo da Brasil. 2019</label>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

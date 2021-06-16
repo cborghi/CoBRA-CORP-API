@@ -1,0 +1,3 @@
+﻿SELECT [TIPO_ID]
+      ,[TIPO_DESCRICAO]
+  FROM [dbo].[TIPO]

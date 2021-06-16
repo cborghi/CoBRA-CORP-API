@@ -1,0 +1,9 @@
+﻿SELECT  
+     [ID_CAMPO]
+    ,[NOME_CAMPO]
+    ,[ID_TABELA]
+    ,[SCRIPT_CAMPO]
+    ,[ATIVO]
+    ,[DESCRICAO]
+FROM 
+    TB_CAMPO_ORIGEM

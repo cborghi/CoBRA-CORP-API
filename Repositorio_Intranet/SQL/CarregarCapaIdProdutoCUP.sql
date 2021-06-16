@@ -1,0 +1,11 @@
+﻿SELECT [ID_CAPA]
+      ,[ID_PRODUTO]
+      ,[CAPA_CORES]
+      ,[CAPA_TIPO_PAPEL]
+      ,[CAPA_GRAMATURA]
+      ,[CAPA_ORELHA]
+      ,[CAPA_ACABAMENTO]
+      ,[CAPA_OBS]
+      ,[CAPA_ACABAMENTO_LOMBADA]
+  FROM [dbo].[TB_CAPA_PRODUTO]
+  WHERE [ID_PRODUTO] = @IdProduto

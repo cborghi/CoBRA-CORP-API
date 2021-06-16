@@ -1,0 +1,3 @@
+﻿SELECT [CODIGO]
+      ,[DESCRICAO]
+  FROM [dbo].[TB_MERCADO]

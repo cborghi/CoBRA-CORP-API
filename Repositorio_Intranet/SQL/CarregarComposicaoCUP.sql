@@ -1,0 +1,3 @@
+﻿SELECT [COMP_ID]
+      ,[COMP_DESCRICAO]
+  FROM [dbo].[COMPOSICAO]

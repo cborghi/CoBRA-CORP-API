@@ -1,0 +1,4 @@
+﻿SELECT [ID_SELO]
+      ,[DESCRICAO]
+      ,[CHAVE_GRUPO]
+  FROM [dbo].[TB_SELO_PROTHEUS]

@@ -1,0 +1,4 @@
+﻿SELECT [ID_UNIDADE_MEDIDA]
+      ,[SIGLA]
+      ,[DESCRICAO]
+  FROM [dbo].[TB_UNIDADE_MEDIDA]

@@ -1,0 +1,5 @@
+﻿SELECT [MIDI_ID]
+      ,[MIDI_DESCRICAO]
+      ,[MIDI_UNIDVENDA]
+      ,[MIDI_PLAT]
+  FROM [dbo].[MIDIA]

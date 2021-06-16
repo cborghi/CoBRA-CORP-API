@@ -1,0 +1,4 @@
+﻿SELECT [SEGM_ID]
+      ,[SEGM_DESCRICAO]
+      ,[ABREVIACAO]
+  FROM [dbo].[SEGMENTO]

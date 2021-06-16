@@ -1,0 +1,4 @@
+﻿SELECT [ID_TIPO_PRODUTO]
+      ,[SIGLA]
+      ,[DESCRICAO]
+  FROM [EBSA].[dbo].[TB_TIPO_PRODUTO]

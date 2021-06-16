@@ -1,0 +1,2 @@
+﻿DELETE FROM [dbo].[AUTORIA]   
+ WHERE [AUTO_ID] = @AUTO_ID

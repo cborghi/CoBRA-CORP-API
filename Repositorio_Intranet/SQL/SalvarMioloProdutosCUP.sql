@@ -1,0 +1,20 @@
+﻿INSERT INTO [dbo].[TB_MIOLO_PRODUTO]
+           ([ID_PRODUTO]
+           ,[MIOLO_PAGINAS]
+           ,[MIOLO_FORM_ALT]
+           ,[MIOLO_FORM_LARG]
+           ,[MIOLO_FORM_PESO]
+           ,[MIOLO_CORES]
+           ,[MIOLO_TIPO_PAPEL]
+           ,[MIOLO_GRAMATURA]
+           ,[MIOLO_OBS])
+     VALUES
+           (@ID_PRODUTO
+           ,@MIOLO_PAGINAS
+           ,@MIOLO_FORM_ALT
+           ,@MIOLO_FORM_LARG
+           ,@MIOLO_FORM_PESO
+           ,@MIOLO_CORES
+           ,@MIOLO_TIPO_PAPEL
+           ,@MIOLO_GRAMATURA
+           ,@MIOLO_OBS)

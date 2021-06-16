@@ -1,0 +1,8 @@
+﻿SELECT  
+     [ID_SISTEMA]
+    ,[NOME_BANCO]
+    ,[DT_CADASTRO]
+    ,[ATIVO]
+    ,[DESCRICAO]
+FROM 
+    TB_SISTEMA_ORIGEM

@@ -1,0 +1,12 @@
+﻿SELECT [ID_MIOLO]
+      ,[ID_PRODUTO]
+      ,[MIOLO_PAGINAS]
+      ,[MIOLO_FORM_ALT]
+      ,[MIOLO_FORM_LARG]
+      ,[MIOLO_FORM_PESO]
+      ,[MIOLO_CORES]
+      ,[MIOLO_TIPO_PAPEL]
+      ,[MIOLO_GRAMATURA]
+      ,[MIOLO_OBS]
+  FROM [dbo].[TB_MIOLO_PRODUTO]
+  WHERE [ID_PRODUTO] = @IdProduto
